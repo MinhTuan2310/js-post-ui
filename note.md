@@ -17,3 +17,5 @@ interceptors: do something when request api (token, optimize data)
  named export, import: dc nhieu thang va co the chon nhung thang minh su dung de import thoi: import {} from '';
 
  tree shaking: ki thuat remove nhung fn khong su dung khi bundle project
+
+ khi hinh bi loi thi minh add them su kien error de set hinh anh default cho web nhe
