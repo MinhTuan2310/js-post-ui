@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.23.0",
     "dayjs": "^1.10.7",
-    "esbuild": "0.13.4"
+    "esbuild": "0.13.4",
+    "lodash.debounce": "^4.0.8"
   }
 }

@@ -19,3 +19,13 @@ interceptors: do something when request api (token, optimize data)
  tree shaking: ki thuat remove nhung fn khong su dung khi bundle project
 
  khi hinh bi loi thi minh add them su kien error de set hinh anh default cho web nhe
+
+ searchParams la 1 obj;
+
+ khi muon truyen vao obj searchParams thi truyen vao 1 chuoi (window.location.search)
+
+ window.location : lay ra obj url;
+
+ window.location.search: lay ra chuoi query params
+
+ 
