@@ -41,6 +41,11 @@ export function createPostElement(post) {
     timeSpanLiElement.textContent = ` - ${dayjs(post.updatedAt).fromNow()}`
   }
 
+  // bind event click for div element to go to post-detail page
+  liElement.firstElementChild.addEventListener('click', () => {
+    window.location.assign(`/post-detail.html?id=${post.id}`)
+  })
+
   return liElement
 }
 

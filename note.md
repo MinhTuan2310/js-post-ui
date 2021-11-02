@@ -28,4 +28,7 @@ interceptors: do something when request api (token, optimize data)
 
  window.location.search: lay ra chuoi query params
 
- 
+ window.location.assign: direct qua trang khac
+
+ lightbox: next: (index + 1) % length
+ lightbox: prev: (index - 1 + length) % length
