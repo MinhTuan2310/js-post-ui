@@ -84,7 +84,7 @@
               Praesentium ea aspernatur vero deserunt.
             </p>
 
-            <img class="post-image" src="https://picsum.photos/1368/800" alt="Picsum photos" />
+            <img data-album='lightbox' class="post-image" src="https://picsum.photos/id/1000/1368/800" alt="Picsum photos" />
 
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -107,7 +107,7 @@
               Praesentium ea aspernatur vero deserunt.
             </p>
 
-            <img class="post-image" src="https://picsum.photos/1368/1000" alt="Picsum photos" />
+            <img data-album='lightbox' class="post-image" src="https://picsum.photos/id/100/1368/800" alt="Picsum photos" />
 
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -115,6 +115,8 @@
               rem, non error, saepe quia dignissimos quas ducimus aliquid.
               Praesentium ea aspernatur vero deserunt.
             </p>
+
+            <img data-album='lightbox' class="post-image" src="https://picsum.photos/id/1/1368/800" alt="Picsum photos" />
           </div>
         </div>
       </div>
@@ -125,6 +127,25 @@
     <small>Created by Po with <i class="fas fa-heart"></i></small>
   </footer>
 
+  <div id="lightbox" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img data-id='lightboxImg' src="" alt="">
+
+          <div class="text-center mt-3">
+            <button data-id='lightboxImgPrev' type="button" class="btn btn-primary">Prev</button>
+            <button data-id='lightboxImgNext' type="button" class="btn btn-secondary">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- boostrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+   crossorigin="anonymous"></script>
   <!-- Scripts should be placed here to prevent blocking render UI -->
   <script type="module" src="/js/post-detail.js"></script>
 </body>

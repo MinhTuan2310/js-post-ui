@@ -29,3 +29,11 @@ section.hero {
   background-position: center;
   background-size: cover;
 }
+
+img {
+  cursor: pointer;
+}
+
+img[data-id=lightboxImg] {
+  width: 100%;
+}
