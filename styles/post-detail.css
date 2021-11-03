@@ -36,4 +36,5 @@ img {
 
 img[data-id=lightboxImg] {
   width: 100%;
+  pointer-events: none;
 }

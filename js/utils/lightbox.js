@@ -22,6 +22,7 @@ export function registerLightBox({modalId, modalImgId, modalPrevButtonId, modalN
   // init lightbox
   document.addEventListener('click', (e) => {
     if(e.target.tagName !== 'IMG' && !e.target.dataset.album) return;
+
     imgList = document.querySelectorAll(`img[data-album=${e.target.dataset.album}]`)
     currentIndex = [...imgList].findIndex(x => x === e.target); // compare by ref
 
