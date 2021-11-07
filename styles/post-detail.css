@@ -38,3 +38,8 @@ img[data-id=lightboxImg] {
   width: 100%;
   pointer-events: none;
 }
+
+#goToEditPageLink {
+  text-decoration: none;
+  font-size: 18px;
+}

@@ -16,4 +16,12 @@ import { registerLightBox, renderPostDetail } from './utils'
 
   // render DOM
   renderPostDetail(postDetail)
+
+  // direct to add-edit-post page when clicking edit post
+  const editPost = document.getElementById('goToEditPageLink');
+  if(editPost) {
+    editPost.addEventListener('click', () => {
+      window.location.assign(`/add-edit-post.html?id=${queryParams.get('id')}`)
+    })
+  }
 })();

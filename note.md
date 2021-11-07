@@ -32,3 +32,5 @@ interceptors: do something when request api (token, optimize data)
 
  lightbox: next: (index + 1) % length
  lightbox: prev: (index - 1 + length) % length
+
+ lay source hinh trong input thi them 1 cai input type = hidden roi set link vao

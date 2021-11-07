@@ -41,8 +41,16 @@ export function createPostElement(post) {
     timeSpanLiElement.textContent = ` - ${dayjs(post.updatedAt).fromNow()}`
   }
 
+  
   // bind event click for div element to go to post-detail page
-  liElement.firstElementChild.addEventListener('click', () => {
+  liElement.firstElementChild.addEventListener('click', (e) => {
+    const editButton = liElement.querySelector('div[data-id=edit]');
+    
+    if(editButton && editButton.contains(e.target)) {
+      window.location.assign(`/add-edit-post.html?id=${post.id}`)
+      return;
+    };
+
     window.location.assign(`/post-detail.html?id=${post.id}`)
   })
 
